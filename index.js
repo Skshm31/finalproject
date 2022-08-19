@@ -9,13 +9,14 @@ import Home from './home';
 import Login from './Login';
 import Add from './add';
 import UploadImages from './uploadimage';
+import List from './searchbar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
    <Routes>
    <Route path="/" element={<Login/>}></Route>
-   <Route path="/blogs" element={<Home />}></Route>
+   <Route path="/blogs" element={<App />}></Route>
    <Route path="/register" element={<Register />}></Route>
    <Route path="/blogs/add" element={<Add />}></Route>
    </Routes>
